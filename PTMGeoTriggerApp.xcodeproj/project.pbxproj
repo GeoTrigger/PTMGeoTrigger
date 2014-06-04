@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E1E1ADB193CF85C007374AD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1E1ADA193CF85C007374AD /* MapKit.framework */; };
+		6E3B4DCA193C84F9009D8993 /* CustomLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DC9193C84F9009D8993 /* CustomLocationManager.m */; };
+		6E3B4DCD193C8514009D8993 /* NetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DCC193C8514009D8993 /* NetworkModel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4DD0193C86D6009D8993 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DCF193C86D6009D8993 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4DD4193C8A5A009D8993 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DD2193C8A5A009D8993 /* LocationViewController.m */; };
+		6E3B4DD5193C8A5A009D8993 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3B4DD3193C8A5A009D8993 /* LocationViewController.xib */; };
+		6E3B4DE1193C8B1A009D8993 /* AnnotationSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DD8193C8B1A009D8993 /* AnnotationSample.m */; };
+		6E3B4DE2193C8B1A009D8993 /* LocationParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DDA193C8B1A009D8993 /* LocationParams.m */; };
+		6E3B4DE3193C8B1A009D8993 /* MapsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DDC193C8B1A009D8993 /* MapsModel.m */; };
+		6E3B4DE4193C8B1A009D8993 /* MapViewDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DDE193C8B1A009D8993 /* MapViewDetails.m */; };
+		6E3B4DE5193C8B1A009D8993 /* MapDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DE0193C8B1A009D8993 /* MapDetails.m */; };
+		6E3B4DE8193C8D72009D8993 /* MyPlanitLocationDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DE7193C8D72009D8993 /* MyPlanitLocationDataManager.m */; };
+		6E3B4DEB193C8E9C009D8993 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DEA193C8E9C009D8993 /* DataModel.m */; };
+		6E3B4DF7193C8EDC009D8993 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DEE193C8EDC009D8993 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4DF8193C8EDC009D8993 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DF0193C8EDC009D8993 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4DF9193C8EDC009D8993 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DF2193C8EDC009D8993 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4DFA193C8EDC009D8993 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DF4193C8EDC009D8993 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4DFB193C8EDC009D8993 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DF6193C8EDC009D8993 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4E01193C8EFD009D8993 /* ObjSqliteDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4DFE193C8EFD009D8993 /* ObjSqliteDB.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4E02193C8EFD009D8993 /* ObjSqliteStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B4E00193C8EFD009D8993 /* ObjSqliteStatement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E3B4E04193C9137009D8993 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3B4E03193C9137009D8993 /* libsqlite3.0.dylib */; };
+		6E764442193C7A4B00B3F313 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E764441193C7A4B00B3F313 /* Foundation.framework */; };
+		6E764444193C7A4B00B3F313 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E764443193C7A4B00B3F313 /* CoreGraphics.framework */; };
+		6E764446193C7A4B00B3F313 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E764445193C7A4B00B3F313 /* UIKit.framework */; };
+		6E76444C193C7A4B00B3F313 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E76444A193C7A4B00B3F313 /* InfoPlist.strings */; };
+		6E76444E193C7A4B00B3F313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76444D193C7A4B00B3F313 /* main.m */; };
+		6E764452193C7A4B00B3F313 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E764451193C7A4B00B3F313 /* AppDelegate.m */; };
+		6E764454193C7A4B00B3F313 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E764453193C7A4B00B3F313 /* Images.xcassets */; };
+		6E76445B193C7A4B00B3F313 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E76445A193C7A4B00B3F313 /* XCTest.framework */; };
+		6E76445C193C7A4B00B3F313 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E764441193C7A4B00B3F313 /* Foundation.framework */; };
+		6E76445D193C7A4B00B3F313 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E764445193C7A4B00B3F313 /* UIKit.framework */; };
+		6E764465193C7A4B00B3F313 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E764463193C7A4B00B3F313 /* InfoPlist.strings */; };
+		6E764467193C7A4B00B3F313 /* PTMGeoTriggerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E764466193C7A4B00B3F313 /* PTMGeoTriggerAppTests.m */; };
+		6E764473193C7C2300B3F313 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E764471193C7C2300B3F313 /* ViewController.m */; };
+		6E764474193C7C2300B3F313 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E764472193C7C2300B3F313 /* ViewController.xib */; };
+		6E764477193C7DAC00B3F313 /* GeoTrackCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E764476193C7DAC00B3F313 /* GeoTrackCellTableViewCell.m */; };
+		6E764479193C7DCE00B3F313 /* GeoTrackCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E764478193C7DCE00B3F313 /* GeoTrackCellTableViewCell.xib */; };
+		6EA647E9193C9BA1006CAD1D /* GeoTrigger.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6EA647E8193C9BA1006CAD1D /* GeoTrigger.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E76445E193C7A4B00B3F313 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E764436193C7A4B00B3F313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E76443D193C7A4B00B3F313;
+			remoteInfo = PTMGeoTriggerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E1E1ADA193CF85C007374AD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6E3B4DC8193C84F9009D8993 /* CustomLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLocationManager.h; sourceTree = "<group>"; };
+		6E3B4DC9193C84F9009D8993 /* CustomLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLocationManager.m; sourceTree = "<group>"; };
+		6E3B4DCB193C8514009D8993 /* NetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkModel.h; sourceTree = "<group>"; };
+		6E3B4DCC193C8514009D8993 /* NetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkModel.m; sourceTree = "<group>"; };
+		6E3B4DCE193C86D6009D8993 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		6E3B4DCF193C86D6009D8993 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		6E3B4DD1193C8A5A009D8993 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		6E3B4DD2193C8A5A009D8993 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		6E3B4DD3193C8A5A009D8993 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		6E3B4DD7193C8B1A009D8993 /* AnnotationSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationSample.h; sourceTree = "<group>"; };
+		6E3B4DD8193C8B1A009D8993 /* AnnotationSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationSample.m; sourceTree = "<group>"; };
+		6E3B4DD9193C8B1A009D8993 /* LocationParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationParams.h; sourceTree = "<group>"; };
+		6E3B4DDA193C8B1A009D8993 /* LocationParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationParams.m; sourceTree = "<group>"; };
+		6E3B4DDB193C8B1A009D8993 /* MapsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsModel.h; sourceTree = "<group>"; };
+		6E3B4DDC193C8B1A009D8993 /* MapsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsModel.m; sourceTree = "<group>"; };
+		6E3B4DDD193C8B1A009D8993 /* MapViewDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewDetails.h; sourceTree = "<group>"; };
+		6E3B4DDE193C8B1A009D8993 /* MapViewDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewDetails.m; sourceTree = "<group>"; };
+		6E3B4DDF193C8B1A009D8993 /* MapDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDetails.h; sourceTree = "<group>"; };
+		6E3B4DE0193C8B1A009D8993 /* MapDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDetails.m; sourceTree = "<group>"; };
+		6E3B4DE6193C8D72009D8993 /* MyPlanitLocationDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlanitLocationDataManager.h; sourceTree = "<group>"; };
+		6E3B4DE7193C8D72009D8993 /* MyPlanitLocationDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlanitLocationDataManager.m; sourceTree = "<group>"; };
+		6E3B4DE9193C8E9C009D8993 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		6E3B4DEA193C8E9C009D8993 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		6E3B4DED193C8EDC009D8993 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		6E3B4DEE193C8EDC009D8993 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		6E3B4DEF193C8EDC009D8993 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		6E3B4DF0193C8EDC009D8993 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		6E3B4DF1193C8EDC009D8993 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		6E3B4DF2193C8EDC009D8993 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		6E3B4DF3193C8EDC009D8993 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		6E3B4DF4193C8EDC009D8993 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		6E3B4DF5193C8EDC009D8993 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		6E3B4DF6193C8EDC009D8993 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		6E3B4DFD193C8EFD009D8993 /* ObjSqliteDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjSqliteDB.h; sourceTree = "<group>"; };
+		6E3B4DFE193C8EFD009D8993 /* ObjSqliteDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjSqliteDB.m; sourceTree = "<group>"; };
+		6E3B4DFF193C8EFD009D8993 /* ObjSqliteStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjSqliteStatement.h; sourceTree = "<group>"; };
+		6E3B4E00193C8EFD009D8993 /* ObjSqliteStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjSqliteStatement.m; sourceTree = "<group>"; };
+		6E3B4E03193C9137009D8993 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		6E76443E193C7A4B00B3F313 /* PTMGeoTriggerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTMGeoTriggerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E764441193C7A4B00B3F313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E764443193C7A4B00B3F313 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E764445193C7A4B00B3F313 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E764449193C7A4B00B3F313 /* PTMGeoTriggerApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTMGeoTriggerApp-Info.plist"; sourceTree = "<group>"; };
+		6E76444B193C7A4B00B3F313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E76444D193C7A4B00B3F313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E76444F193C7A4B00B3F313 /* PTMGeoTriggerApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTMGeoTriggerApp-Prefix.pch"; sourceTree = "<group>"; };
+		6E764450193C7A4B00B3F313 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E764451193C7A4B00B3F313 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E764453193C7A4B00B3F313 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E764459193C7A4B00B3F313 /* PTMGeoTriggerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTMGeoTriggerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E76445A193C7A4B00B3F313 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6E764462193C7A4B00B3F313 /* PTMGeoTriggerAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTMGeoTriggerAppTests-Info.plist"; sourceTree = "<group>"; };
+		6E764464193C7A4B00B3F313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E764466193C7A4B00B3F313 /* PTMGeoTriggerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTMGeoTriggerAppTests.m; sourceTree = "<group>"; };
+		6E764470193C7C2300B3F313 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6E764471193C7C2300B3F313 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E764472193C7C2300B3F313 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		6E764475193C7DAC00B3F313 /* GeoTrackCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoTrackCellTableViewCell.h; sourceTree = "<group>"; };
+		6E764476193C7DAC00B3F313 /* GeoTrackCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoTrackCellTableViewCell.m; sourceTree = "<group>"; };
+		6E764478193C7DCE00B3F313 /* GeoTrackCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeoTrackCellTableViewCell.xib; sourceTree = "<group>"; };
+		6EA647E8193C9BA1006CAD1D /* GeoTrigger.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeoTrigger.sqlite; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E76443B193C7A4B00B3F313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1E1ADB193CF85C007374AD /* MapKit.framework in Frameworks */,
+				6E3B4E04193C9137009D8993 /* libsqlite3.0.dylib in Frameworks */,
+				6E764444193C7A4B00B3F313 /* CoreGraphics.framework in Frameworks */,
+				6E764446193C7A4B00B3F313 /* UIKit.framework in Frameworks */,
+				6E764442193C7A4B00B3F313 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E764456193C7A4B00B3F313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E76445B193C7A4B00B3F313 /* XCTest.framework in Frameworks */,
+				6E76445D193C7A4B00B3F313 /* UIKit.framework in Frameworks */,
+				6E76445C193C7A4B00B3F313 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E3B4DD6193C8B02009D8993 /* MapViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				6E3B4DE6193C8D72009D8993 /* MyPlanitLocationDataManager.h */,
+				6E3B4DE7193C8D72009D8993 /* MyPlanitLocationDataManager.m */,
+				6E3B4DD7193C8B1A009D8993 /* AnnotationSample.h */,
+				6E3B4DD8193C8B1A009D8993 /* AnnotationSample.m */,
+				6E3B4DD9193C8B1A009D8993 /* LocationParams.h */,
+				6E3B4DDA193C8B1A009D8993 /* LocationParams.m */,
+				6E3B4DDB193C8B1A009D8993 /* MapsModel.h */,
+				6E3B4DDC193C8B1A009D8993 /* MapsModel.m */,
+				6E3B4DDD193C8B1A009D8993 /* MapViewDetails.h */,
+				6E3B4DDE193C8B1A009D8993 /* MapViewDetails.m */,
+				6E3B4DDF193C8B1A009D8993 /* MapDetails.h */,
+				6E3B4DE0193C8B1A009D8993 /* MapDetails.m */,
+			);
+			name = MapViewClasses;
+			sourceTree = "<group>";
+		};
+		6E3B4DEC193C8ED0009D8993 /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				6E3B4DFC193C8EEC009D8993 /* ObjSqlite */,
+				6E3B4DED193C8EDC009D8993 /* FMDatabase.h */,
+				6E3B4DEE193C8EDC009D8993 /* FMDatabase.m */,
+				6E3B4DEF193C8EDC009D8993 /* FMDatabaseAdditions.h */,
+				6E3B4DF0193C8EDC009D8993 /* FMDatabaseAdditions.m */,
+				6E3B4DF1193C8EDC009D8993 /* FMDatabasePool.h */,
+				6E3B4DF2193C8EDC009D8993 /* FMDatabasePool.m */,
+				6E3B4DF3193C8EDC009D8993 /* FMDatabaseQueue.h */,
+				6E3B4DF4193C8EDC009D8993 /* FMDatabaseQueue.m */,
+				6E3B4DF5193C8EDC009D8993 /* FMResultSet.h */,
+				6E3B4DF6193C8EDC009D8993 /* FMResultSet.m */,
+			);
+			name = FMDatabase;
+			sourceTree = "<group>";
+		};
+		6E3B4DFC193C8EEC009D8993 /* ObjSqlite */ = {
+			isa = PBXGroup;
+			children = (
+				6E3B4DFD193C8EFD009D8993 /* ObjSqliteDB.h */,
+				6E3B4DFE193C8EFD009D8993 /* ObjSqliteDB.m */,
+				6E3B4DFF193C8EFD009D8993 /* ObjSqliteStatement.h */,
+				6E3B4E00193C8EFD009D8993 /* ObjSqliteStatement.m */,
+			);
+			name = ObjSqlite;
+			sourceTree = "<group>";
+		};
+		6E764435193C7A4B00B3F313 = {
+			isa = PBXGroup;
+			children = (
+				6E764447193C7A4B00B3F313 /* PTMGeoTriggerApp */,
+				6E764460193C7A4B00B3F313 /* PTMGeoTriggerAppTests */,
+				6E764440193C7A4B00B3F313 /* Frameworks */,
+				6E76443F193C7A4B00B3F313 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E76443F193C7A4B00B3F313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E76443E193C7A4B00B3F313 /* PTMGeoTriggerApp.app */,
+				6E764459193C7A4B00B3F313 /* PTMGeoTriggerAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E764440193C7A4B00B3F313 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E1E1ADA193CF85C007374AD /* MapKit.framework */,
+				6E3B4E03193C9137009D8993 /* libsqlite3.0.dylib */,
+				6E764441193C7A4B00B3F313 /* Foundation.framework */,
+				6E764443193C7A4B00B3F313 /* CoreGraphics.framework */,
+				6E764445193C7A4B00B3F313 /* UIKit.framework */,
+				6E76445A193C7A4B00B3F313 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E764447193C7A4B00B3F313 /* PTMGeoTriggerApp */ = {
+			isa = PBXGroup;
+			children = (
+				6E3B4DEC193C8ED0009D8993 /* FMDatabase */,
+				6E3B4DD6193C8B02009D8993 /* MapViewClasses */,
+				6E764450193C7A4B00B3F313 /* AppDelegate.h */,
+				6E764451193C7A4B00B3F313 /* AppDelegate.m */,
+				6E3B4DD1193C8A5A009D8993 /* LocationViewController.h */,
+				6E3B4DD2193C8A5A009D8993 /* LocationViewController.m */,
+				6E3B4DD3193C8A5A009D8993 /* LocationViewController.xib */,
+				6E764470193C7C2300B3F313 /* ViewController.h */,
+				6E764471193C7C2300B3F313 /* ViewController.m */,
+				6E764472193C7C2300B3F313 /* ViewController.xib */,
+				6E764475193C7DAC00B3F313 /* GeoTrackCellTableViewCell.h */,
+				6E764476193C7DAC00B3F313 /* GeoTrackCellTableViewCell.m */,
+				6E764478193C7DCE00B3F313 /* GeoTrackCellTableViewCell.xib */,
+				6E3B4DC8193C84F9009D8993 /* CustomLocationManager.h */,
+				6E3B4DC9193C84F9009D8993 /* CustomLocationManager.m */,
+				6E3B4DCB193C8514009D8993 /* NetworkModel.h */,
+				6E3B4DCC193C8514009D8993 /* NetworkModel.m */,
+				6E3B4DCE193C86D6009D8993 /* Reachability.h */,
+				6E3B4DCF193C86D6009D8993 /* Reachability.m */,
+				6E3B4DE9193C8E9C009D8993 /* DataModel.h */,
+				6E3B4DEA193C8E9C009D8993 /* DataModel.m */,
+				6E764453193C7A4B00B3F313 /* Images.xcassets */,
+				6EA647E8193C9BA1006CAD1D /* GeoTrigger.sqlite */,
+				6E764448193C7A4B00B3F313 /* Supporting Files */,
+			);
+			path = PTMGeoTriggerApp;
+			sourceTree = "<group>";
+		};
+		6E764448193C7A4B00B3F313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E764449193C7A4B00B3F313 /* PTMGeoTriggerApp-Info.plist */,
+				6E76444A193C7A4B00B3F313 /* InfoPlist.strings */,
+				6E76444D193C7A4B00B3F313 /* main.m */,
+				6E76444F193C7A4B00B3F313 /* PTMGeoTriggerApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E764460193C7A4B00B3F313 /* PTMGeoTriggerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E764466193C7A4B00B3F313 /* PTMGeoTriggerAppTests.m */,
+				6E764461193C7A4B00B3F313 /* Supporting Files */,
+			);
+			path = PTMGeoTriggerAppTests;
+			sourceTree = "<group>";
+		};
+		6E764461193C7A4B00B3F313 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E764462193C7A4B00B3F313 /* PTMGeoTriggerAppTests-Info.plist */,
+				6E764463193C7A4B00B3F313 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E76443D193C7A4B00B3F313 /* PTMGeoTriggerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E76446A193C7A4B00B3F313 /* Build configuration list for PBXNativeTarget "PTMGeoTriggerApp" */;
+			buildPhases = (
+				6E76443A193C7A4B00B3F313 /* Sources */,
+				6E76443B193C7A4B00B3F313 /* Frameworks */,
+				6E76443C193C7A4B00B3F313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTMGeoTriggerApp;
+			productName = PTMGeoTriggerApp;
+			productReference = 6E76443E193C7A4B00B3F313 /* PTMGeoTriggerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E764458193C7A4B00B3F313 /* PTMGeoTriggerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E76446D193C7A4B00B3F313 /* Build configuration list for PBXNativeTarget "PTMGeoTriggerAppTests" */;
+			buildPhases = (
+				6E764455193C7A4B00B3F313 /* Sources */,
+				6E764456193C7A4B00B3F313 /* Frameworks */,
+				6E764457193C7A4B00B3F313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E76445F193C7A4B00B3F313 /* PBXTargetDependency */,
+			);
+			name = PTMGeoTriggerAppTests;
+			productName = PTMGeoTriggerAppTests;
+			productReference = 6E764459193C7A4B00B3F313 /* PTMGeoTriggerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E764436193C7A4B00B3F313 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sstig;
+				TargetAttributes = {
+					6E764458193C7A4B00B3F313 = {
+						TestTargetID = 6E76443D193C7A4B00B3F313;
+					};
+				};
+			};
+			buildConfigurationList = 6E764439193C7A4B00B3F313 /* Build configuration list for PBXProject "PTMGeoTriggerApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E764435193C7A4B00B3F313;
+			productRefGroup = 6E76443F193C7A4B00B3F313 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E76443D193C7A4B00B3F313 /* PTMGeoTriggerApp */,
+				6E764458193C7A4B00B3F313 /* PTMGeoTriggerAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E76443C193C7A4B00B3F313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA647E9193C9BA1006CAD1D /* GeoTrigger.sqlite in Resources */,
+				6E76444C193C7A4B00B3F313 /* InfoPlist.strings in Resources */,
+				6E764479193C7DCE00B3F313 /* GeoTrackCellTableViewCell.xib in Resources */,
+				6E764474193C7C2300B3F313 /* ViewController.xib in Resources */,
+				6E3B4DD5193C8A5A009D8993 /* LocationViewController.xib in Resources */,
+				6E764454193C7A4B00B3F313 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E764457193C7A4B00B3F313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E764465193C7A4B00B3F313 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E76443A193C7A4B00B3F313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3B4DE8193C8D72009D8993 /* MyPlanitLocationDataManager.m in Sources */,
+				6E764473193C7C2300B3F313 /* ViewController.m in Sources */,
+				6E764477193C7DAC00B3F313 /* GeoTrackCellTableViewCell.m in Sources */,
+				6E3B4DE4193C8B1A009D8993 /* MapViewDetails.m in Sources */,
+				6E3B4DF8193C8EDC009D8993 /* FMDatabaseAdditions.m in Sources */,
+				6E3B4DCD193C8514009D8993 /* NetworkModel.m in Sources */,
+				6E3B4DE5193C8B1A009D8993 /* MapDetails.m in Sources */,
+				6E3B4DD4193C8A5A009D8993 /* LocationViewController.m in Sources */,
+				6E3B4DD0193C86D6009D8993 /* Reachability.m in Sources */,
+				6E3B4DFA193C8EDC009D8993 /* FMDatabaseQueue.m in Sources */,
+				6E764452193C7A4B00B3F313 /* AppDelegate.m in Sources */,
+				6E3B4DE2193C8B1A009D8993 /* LocationParams.m in Sources */,
+				6E3B4E01193C8EFD009D8993 /* ObjSqliteDB.m in Sources */,
+				6E3B4E02193C8EFD009D8993 /* ObjSqliteStatement.m in Sources */,
+				6E76444E193C7A4B00B3F313 /* main.m in Sources */,
+				6E3B4DEB193C8E9C009D8993 /* DataModel.m in Sources */,
+				6E3B4DFB193C8EDC009D8993 /* FMResultSet.m in Sources */,
+				6E3B4DF9193C8EDC009D8993 /* FMDatabasePool.m in Sources */,
+				6E3B4DE3193C8B1A009D8993 /* MapsModel.m in Sources */,
+				6E3B4DE1193C8B1A009D8993 /* AnnotationSample.m in Sources */,
+				6E3B4DCA193C84F9009D8993 /* CustomLocationManager.m in Sources */,
+				6E3B4DF7193C8EDC009D8993 /* FMDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E764455193C7A4B00B3F313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E764467193C7A4B00B3F313 /* PTMGeoTriggerAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E76445F193C7A4B00B3F313 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E76443D193C7A4B00B3F313 /* PTMGeoTriggerApp */;
+			targetProxy = 6E76445E193C7A4B00B3F313 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E76444A193C7A4B00B3F313 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E76444B193C7A4B00B3F313 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E764463193C7A4B00B3F313 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E764464193C7A4B00B3F313 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E764468193C7A4B00B3F313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E764469193C7A4B00B3F313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E76446B193C7A4B00B3F313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTMGeoTriggerApp/PTMGeoTriggerApp-Prefix.pch";
+				INFOPLIST_FILE = "PTMGeoTriggerApp/PTMGeoTriggerApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E76446C193C7A4B00B3F313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTMGeoTriggerApp/PTMGeoTriggerApp-Prefix.pch";
+				INFOPLIST_FILE = "PTMGeoTriggerApp/PTMGeoTriggerApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E76446E193C7A4B00B3F313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PTMGeoTriggerApp.app/PTMGeoTriggerApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTMGeoTriggerApp/PTMGeoTriggerApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PTMGeoTriggerAppTests/PTMGeoTriggerAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6E76446F193C7A4B00B3F313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PTMGeoTriggerApp.app/PTMGeoTriggerApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTMGeoTriggerApp/PTMGeoTriggerApp-Prefix.pch";
+				INFOPLIST_FILE = "PTMGeoTriggerAppTests/PTMGeoTriggerAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E764439193C7A4B00B3F313 /* Build configuration list for PBXProject "PTMGeoTriggerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E764468193C7A4B00B3F313 /* Debug */,
+				6E764469193C7A4B00B3F313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E76446A193C7A4B00B3F313 /* Build configuration list for PBXNativeTarget "PTMGeoTriggerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E76446B193C7A4B00B3F313 /* Debug */,
+				6E76446C193C7A4B00B3F313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E76446D193C7A4B00B3F313 /* Build configuration list for PBXNativeTarget "PTMGeoTriggerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E76446E193C7A4B00B3F313 /* Debug */,
+				6E76446F193C7A4B00B3F313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E764436193C7A4B00B3F313 /* Project object */;
+}
